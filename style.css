@@ -1,0 +1,238 @@
+:root {
+  --mainBlue: rgb(60, 141, 207);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+section,
+article {
+  padding-inline: min(7vw, 5rem);
+  margin-block: 8rem;
+}
+nav {
+  margin: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navItem,
+.navBtn {
+  display: none;
+}
+.nav-Menu {
+  width: 2rem;
+  transition: 0.3s;
+}
+.notActive {
+  display: none;
+}
+.navItems {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(209, 209, 209);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.active {
+  display: block;
+}
+.mainCont {
+  text-align: center;
+}
+.mainTextCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainDesc,
+.topDesc {
+  max-width: 45vw;
+}
+.mainBtn {
+  height: clamp(2.2rem, 3.5vw, 4rem);
+  width: clamp(8rem, 12vw, 18rem);
+  color: white;
+  background-color: var(--mainBlue);
+  border-radius: 5rem;
+  margin-inline: 1rem;
+  border: none;
+  margin-block: 3rem;
+}
+.mainImg {
+  margin: 2rem;
+  width: 85%;
+}
+.servicesCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.headingLine {
+  width: 3rem;
+  margin: 0 auto;
+}
+.topDesc {
+  margin-bottom: 3rem;
+  align-self: center;
+}
+.serviceItemCont {
+  display: flex;
+  flex-direction: column;
+}
+.serviceItem {
+  margin-block: 2rem;
+  box-shadow: 0px 0px 10px rgb(139, 139, 139);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.serviceA {
+  color: var(--mainBlue);
+  text-decoration: none;
+}
+.aboutTextCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.aboutItemCont {
+  margin-block: 2rem;
+}
+.aboutItem {
+  border-radius: 5rem;
+  margin-block: 2rem;
+  padding-block: 0.3rem;
+  box-shadow: 0px 0px 15px rgb(196, 196, 196);
+}
+.aboutImg {
+  width: 90%;
+}
+.aboutBtn {
+  border-radius: 5rem;
+  border: none;
+  padding: 0.5rem;
+  width: 60%;
+  margin: 0 auto;
+  color: white;
+  background-color: var(--mainBlue);
+  background-image: linear-gradient(
+    to right,
+    #1e5799 0%,
+    #2989d8 31%,
+    #207cca 76%,
+    #7db9e8 100%
+  );
+}
+.reviewCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.reviewName {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.reviewDate {
+  margin: 0.1rem;
+}
+.reviewTitle {
+  display: none;
+}
+.stars {
+  margin-bottom: 1.5rem;
+}
+.reviewDesc2 {
+  padding: 2rem 4rem;
+  background-image: url(./images/client-bg.png);
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+}
+.reviewPerson {
+  display: flex;
+  column-gap: 1rem;
+}
+.reviewImg {
+  height: 8rem;
+  width: 8rem;
+  margin: 1rem;
+  border-radius: 50%;
+}
+.pricesContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.pricesItemCont {
+  margin: 0 auto;
+}
+.pricesItem {
+  background-image: url(./images/regular-table-top.png),
+    url(./images/regular-table-bottom.png);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  padding-block: 4rem;
+  border-radius: 1rem;
+  padding-inline: 2.5rem;
+  margin: 2rem auto;
+  position: relative;
+  max-width: 85%;
+}
+.pricesItem-Big {
+  background-image: url(./images/pro-table-top.png),
+    url(./images/pro-table-bottom.png);
+}
+.pricesPrice {
+  position: absolute;
+  left: 1rem;
+  top: -1rem;
+  color: white;
+}
+.pricesItem-Btn {
+  border-radius: 5rem;
+  color: var(--mainBlue);
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid var(--mainBlue);
+}
+.footerBtn {
+  width: 90%;
+  color: var(--mainBlue);
+  margin: 0 auto;
+}
+.footerCont {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+}
+input {
+  border-radius: 0.5rem;
+  border: none;
+  max-width: 70%;
+}
+.footerBtn {
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  background: none;
+  color: white;
+  max-width: 50%;
+  border-radius: 1rem;
+}
+footer {
+  background-color: var(--mainBlue);
+  padding-block: 3rem;
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}

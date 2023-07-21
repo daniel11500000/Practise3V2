@@ -1,0 +1,119 @@
+@media screen and (min-width: 768px) {
+  header {
+    background-image: url(./images/slider-left-dec.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  section,
+  article {
+    margin-block: 15rem;
+  }
+  button {
+    padding: 0.8rem;
+  }
+  nav {
+    justify-content: flex-end;
+    column-gap: min(2vw, 4rem);
+    position: relative;
+    margin-inline: min(15vw, 20rem);
+    padding-inline: 2rem;
+  }
+  .mainDesc,
+  .topDesc {
+    max-width: 35vw;
+    align-self: center;
+  }
+  .logo {
+    position: absolute;
+    left: min(3vw, 5rem);
+  }
+  .navItem,
+  .navBtn {
+    display: block;
+  }
+  .nav-Menu {
+    display: none;
+  }
+  .mainCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainImg {
+    margin: 2rem;
+    width: 40rem;
+  }
+  #services {
+    background-image: url(./images/services-right-dec.png),
+      url(./images/services-left-dec.png);
+    background-repeat: no-repeat;
+    background-position: right top, left bottom;
+  }
+  .serviceItemCont {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-block: 10rem;
+    justify-content: center;
+    column-gap: 4rem;
+    text-align: start;
+  }
+  .serviceItem {
+    padding: 3rem;
+    border-radius: 1rem;
+  }
+  .serviceDesc {
+    width: 15rem;
+  }
+  .aboutCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5rem;
+  }
+  .aboutItemCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+  }
+  .aboutItem {
+    margin: 0;
+  }
+  .reviewSecCont {
+    display: flex;
+    justify-content: center;
+    column-gap: 8rem;
+  }
+  .reviewItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 6rem;
+  }
+  .reviewTitle {
+    display: block;
+  }
+  .reviewDesc2 {
+    padding: 4rem;
+    background-repeat: no-repeat;
+  }
+  .reviewText {
+    max-width: 20rem;
+  }
+  .pricesItemCont {
+    display: flex;
+    column-gap: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .pricesItem {
+    padding: clamp(2rem, 4vw, 5rem);
+  }
+  footer {
+    padding-inline: clamp(5rem, 10vh, 50rem);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+}
